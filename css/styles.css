@@ -7,11 +7,13 @@
 }
 
 body{
-    background-image: url("/Assets/bg.jpeg");
+    background-image: url("https://webartdevelopers.com/blog/wp-content/uploads/2019/02/Pure-CSS3-Gradient-Background-Animation.gif");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
+    display: grid;
+
 }
