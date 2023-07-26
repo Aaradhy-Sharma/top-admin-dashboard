@@ -25,7 +25,13 @@ body{
     background-color: rgba(206, 198, 198, 0.503);
     padding: 20px;
     border-radius: 0px 20px 20px 0px;
+    margin-right: 5px;
+    transition: 0.5s all ease-in-out;
+}
 
+.sidebar:hover{
+    transform: scale(1.02);
+    transition: 0.5s all ease-in-out;
 }
 
 .content{
@@ -34,16 +40,29 @@ body{
     border-radius: 20px 0px 0px 20px;
     display: grid;
     grid-template-rows: 10% 90%;
-    background-color: rgba(206, 198, 198, 0.884);
 }
 
 .content .headbar{
     border: 1px solid red;
-    background-color: rgba(134, 34, 34, 0.503);
+    background-color: rgba(227, 227, 227, 0);
+    border-radius: 20px 20px 20px 20px;
+
+}
+
+.headbar:hover{
+    transform: scale(1.01);
+    transition: 0.5s all ease-in-out;
 }
 
 .content .main{
     border: 1px solid green;
     display: grid;
     grid-template-columns: 50% 50%;
+    background-color: rgba(227, 227, 227, 0.5);
+    border-radius: 20px 0px 20px 0px;
+}
+
+.main:hover{
+    transform: scale(1.01);
+    transition: 0.5s all ease-in-out;
 }
