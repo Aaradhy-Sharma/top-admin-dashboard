@@ -7,13 +7,43 @@
 }
 
 body{
-    background-image: url("https://raw.githubusercontent.com/Aaradhy-Sharma/top-admin-dashboard/main/Assets/bg.gif");
+    background-image: url("/Assets/bg.gif");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 500;
-    display: grid;
+    font-family: 'Roboto', sans-serif;  
+}
 
+.grid{
+    display: grid;
+    grid-template-columns:20% 80%;
+}
+
+.sidebar{
+    height: 100vh;
+    background-color: rgba(206, 198, 198, 0.503);
+    padding: 20px;
+    border-radius: 0px 20px 20px 0px;
+
+}
+
+.content{
+    height: 100vh;
+    border: 1px solid blue;
+    border-radius: 20px 0px 0px 20px;
+    display: grid;
+    grid-template-rows: 10% 90%;
+    background-color: rgba(206, 198, 198, 0.884);
+}
+
+.content .headbar{
+    border: 1px solid red;
+    background-color: rgba(134, 34, 34, 0.503);
+}
+
+.content .main{
+    border: 1px solid green;
+    display: grid;
+    grid-template-columns: 50% 50%;
 }
