@@ -7,7 +7,7 @@
 }
 
 body{
-    background-image: url("/Assets/bg_dark_purple.jpg");
+    background-image: url("https://raw.githubusercontent.com/Aaradhy-Sharma/top-admin-dashboard/main/Assets/bg_dark_purple.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -51,8 +51,14 @@ body{
 
 .content .headbar{
     border: 1px solid red;
-    background-color: rgb(163, 200, 211);
+    background-color: rgba(210, 215, 217, 0.126);
     border-radius: 20px 20px 20px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+    margin-bottom: 5px;
+
 
 }
 
@@ -65,7 +71,7 @@ body{
     border: 1px solid green;
     display: grid; 
     grid-template-columns: 50% 50%;
-    background-color: rgba(227, 227, 227, 0.582);
+    background-color: rgba(227, 227, 227, 0);
     border-radius: 20px 0px 20px 0px;
 
 }
@@ -76,7 +82,7 @@ body{
 }
 
 .sidebarHeading{
-    color:rgb(163, 200, 211);
+    color:rgb(198, 209, 212);
     font-size: 25px;
     font-weight: 500;
     text-align: center;
@@ -110,6 +116,7 @@ body{
     width: 100%;
     text-align: center;
     border-radius: 10px;
+    cursor: pointer;
     transition: 0.5s all ease-in-out;
 }
 
@@ -135,6 +142,7 @@ body{
     text-align: center;
     border-radius: 10px;
     transition: 0.5s all ease-in-out;
+    cursor: pointer;
 }
 
 .sidebarList2 li:hover{
@@ -150,9 +158,123 @@ body{
     border-radius: 10px;
     transition: 0.5s all ease-in-out;
     background-color: transparent;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.dashboardBottomImg:hover{
+    transform: scale(1.05);
+    transition: 0.5s all ease-in-out;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
 }
 
 .sidebarList1,.sidebarList2{
     color:rgba(208, 178, 224, 0.836);
+    text-shadow: 0px 0px 5px rgba(215, 210, 210, 0.5);
+}
+
+.search{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s all ease-in-out;
+}
+
+.searchIcon{
+    color:rgba(208, 178, 224, 0.836);
+    text-shadow: 0px 0px 5px rgba(215, 210, 210, 0.5);
+    height: 30px;
+    transition: 0.5s all ease-in-out;
+    margin: 1px 0px 0px -45px;
+    
+}
+
+.searchBar{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    padding: 10px 10px 10px 40px;
+    border-radius: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    background-color: rgba(133, 129, 129, 0.23);
+    color:rgba(200, 192, 204, 0.836);
+    text-shadow: 0px 0px 1px rgba(215, 210, 210, 0.5);
+    outline-color: aliceblue;
+    outline-width: 0px;
+    transition: 0.5s all ease-in-out;
+    box-shadow: 0px 0px 5px rgba(245, 241, 241, 0.69);
+
+}
+
+.searchIcon:hover{
+    transform: scale(1.08);
+    opacity: 0.8;
+    transition: 0.5s all ease-in-out;
+}
+
+.searchBar:hover{
+    transform: scale(1.08);
+    transform: scaleX(1.08);
+    background-color: rgba(255, 255, 255, 0.5);
+    transition: 0.5s all ease-in-out;
+    box-shadow: 0px 0px 10px rgba(233, 228, 228, 0.5);
+}
+
+.searchBar:focus{
+    transform: scale(1.08);
+    background-color: rgba(35, 31, 35, 0.5);
+    transition: 0.5s all ease-in-out;
+}
+
+.userImg{
+    margin: 10px 0px auto;
+    transition: 0.5s all ease-in-out;
+    background-color: transparent;
+}
+
+.userIcon{
+    width: 55px;
+    height:55px;
+    object-fit: cover;
+    border: 1px solid whitesmoke;
+    border-radius: 50px;
+    transition: 0.5s all ease-in-out;
+    background-color: transparent;
+    box-shadow: 0px 0px 5px rgba(233, 228, 228, 0.5);
+}
+
+.userIcon:hover{
+    transform: scale(1.1);
+    transition: 0.5s all ease-in-out;
+    background-color: whitesmoke;
+    box-shadow: 0px 0px 10px rgba(233, 228, 228, 0.5);
+    cursor: pointer;
+}
+
+.lang-selector{
+    transition: 0.5s all ease-in-out;
+    margin-right: -400px;
+}
+
+.lang-selector .lang{
+    margin: 10px 0px;
+    padding: 10px 0px;
+    width: 100%;
+    text-align: center;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s all ease-in-out;
+    background-color: transparent;
+    color: rgba(208, 178, 224, 0.836);
+    border: none;
+    outline: none;
+    text-shadow: 0px 0px 5px rgba(215, 210, 210, 0.5);
+}
+
+.lang-selector .lang:hover{
+    transform: scale(1.05);
+    transition: 0.5s all ease-in-out;
+    background-color: rgba(208, 178, 224, 0.226);
+    color: rgba(255, 255, 255, 0.836);
     text-shadow: 0px 0px 5px rgba(215, 210, 210, 0.5);
 }
