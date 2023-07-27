@@ -7,12 +7,13 @@
 }
 
 body{
-    background-image: url("/Assets/bg.gif");
+    background-image: url("/Assets/bg_dark_purple.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
     font-family: 'Roboto', sans-serif;  
+    background-color: transparent;
 }
 
 .grid{
@@ -22,12 +23,17 @@ body{
 
 .sidebar{
     height: 100vh;
-    background-color: rgba(206, 198, 198, 0.503);
+    background-color: rgba(206, 198, 198, 0.176);
     padding: 20px;
     border-radius: 0px 20px 20px 0px;
     margin-right: 5px;
     transition: 0.5s all ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid rgba(0, 0, 0, 0.5);
 }
+ 
 
 .sidebar:hover{
     transform: scale(1.02);
@@ -40,11 +46,12 @@ body{
     border-radius: 20px 0px 0px 20px;
     display: grid;
     grid-template-rows: 10% 90%;
+    
 }
 
 .content .headbar{
     border: 1px solid red;
-    background-color: rgba(227, 227, 227, 0);
+    background-color: rgb(163, 200, 211);
     border-radius: 20px 20px 20px 20px;
 
 }
@@ -56,13 +63,96 @@ body{
 
 .content .main{
     border: 1px solid green;
-    display: grid;
+    display: grid; 
     grid-template-columns: 50% 50%;
-    background-color: rgba(227, 227, 227, 0.5);
+    background-color: rgba(227, 227, 227, 0.582);
     border-radius: 20px 0px 20px 0px;
+
 }
 
 .main:hover{
     transform: scale(1.01);
     transition: 0.5s all ease-in-out;
+}
+
+.sidebarHeading{
+    color:rgb(163, 200, 211);
+    font-size: 25px;
+    font-weight: 500;
+    text-align: center;
+    margin: 12px 0px 80px 0px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.sidebar:hover .sidebarHeading{
+    font-size: 28px;
+    transition: 0.5s all ease-in-out;
+}
+
+.sidebar .sidebarHeading:hover{
+    font-size: 29px;
+    transition: 0.5s all ease-in-out;
+}
+
+.sidebarList1{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sidebarList1 li{
+    margin: 10px 0px;
+    padding: 10px 0px;
+    width: 100%;
+    text-align: center;
+    border-radius: 10px;
+    transition: 0.5s all ease-in-out;
+}
+
+.sidebarList1 li:hover{
+    transform: scale(1.05);
+    transition: 0.5s all ease-in-out;
+}
+
+.sidebarList2{
+    list-style: none;
+    margin: 120px 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sidebarList2 li{
+    margin: 6px 0px;
+    padding: 6px 0px;
+    width: 100%;
+    text-align: center;
+    border-radius: 10px;
+    transition: 0.5s all ease-in-out;
+}
+
+.sidebarList2 li:hover{
+    transform: scale(1.05);
+    transition: 0.5s all ease-in-out;
+}
+
+.dashboardBottomImg{
+    margin: -40px 0px 100px 0px;
+    width: 30%;
+    height: 30%;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: 0.5s all ease-in-out;
+    background-color: transparent;
+}
+
+.sidebarList1,.sidebarList2{
+    color:rgba(208, 178, 224, 0.836);
+    text-shadow: 0px 0px 5px rgba(215, 210, 210, 0.5);
 }
