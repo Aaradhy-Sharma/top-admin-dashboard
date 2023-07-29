@@ -12,12 +12,17 @@ const shareIcon = document.querySelectorAll('[data-share]');
 const shareL1 = document.getElementById('shareL1');
 const shareL2 = document.getElementById('shareL2');
 const shareL3 = document.getElementById('shareL3');
+// const shareL4 = document.getElementById('shareL4');
 const shareR1 = document.getElementById('shareR1');
 const shareR2 = document.getElementById('shareR2');
 const shareR3 = document.getElementById('shareR3');
+// const shareR4 = document.getElementById('shareR4');
 
 
 
+dbBottomImg.addEventListener('click', () => {
+    open('https://github.com/Aaradhy-Sharma/top-admin-dashboard');
+});
 
 
 let bookmarked = false;
@@ -90,6 +95,14 @@ shareL3.addEventListener('click', () => {
 shareR3.addEventListener('click', () => {
     open('#');
 });
+
+// shareL4.addEventListener('click', () => {
+//     open('#');
+// });
+
+// shareR4.addEventListener('click', () => {
+//     open('#');
+// });
 
 
 console.log("script loaded successfully.")
