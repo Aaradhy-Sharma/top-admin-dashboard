@@ -383,16 +383,14 @@ body{
 
 .card-container{
     display: grid;
-    grid-template-columns: 50% 50%;
-    border: 1px solid green;
-    color: #ccc;
-    margin: 10px;
-    padding: 10px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 5px rgba(233, 228, 228, 0.5);
-    transition: 0.5s all ease-in-out;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
     height: 100%;
     width: 100%;
+    transition: 0.5s all ease-in-out;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;    
 }
 
 
@@ -419,4 +417,76 @@ body{
     height: 50%;
     width: 100%;
     color: #ccc;
+}
+
+.card{
+    color: #ccc;
+    background-color: rgba(35, 31, 35, 0.5);
+    border-left: 3px solid rgba(208, 178, 224, 0.836);
+    border-radius: 10px;
+    width: 90%;
+    height: 200px;
+    margin: 20px;
+    margin-left: 20px;
+    padding: 10px;
+    transition: 0.5s all ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 20px;
+}
+
+.card:hover{
+    transform: scale(1.05);
+    transition: 0.5s all ease-in-out;
+    background-color: rgba(35, 31, 35, 0.8);
+    box-shadow: 0px 0px 10px rgba(233, 228, 228, 0.5);
+}
+
+.cardBottomBar{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    margin-top: 35px;
+    padding: 10px;
+    border-top: 1px solid rgba(208, 178, 224, 0.836);
+    transition: 0.5s all ease-in-out;
+
+}
+
+.cardBottomBar img{
+    background-color: transparent;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    margin-right: 10px;
+    transition: 0.5s all ease-in-out;
+    cursor: pointer;
+}
+
+.cardBottomBar img:hover{
+    transform: scale(1.1);
+    transition: 0.5s all ease-in-out;
+}
+
+.card p{
+    margin: 0px;
+    padding: 0px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: 0.5s all ease-in-out;
+}
+
+.card h3{
+    margin: 10px 0px;
+    padding: 0px;
+    font-size: 30px;
+    font-weight: 500;
+    transition: 0.5s all ease-in-out;
 }
