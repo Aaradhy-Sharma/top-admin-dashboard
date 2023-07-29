@@ -14,6 +14,7 @@ body{
     background-attachment: fixed;
     font-family: 'Roboto', sans-serif;  
     background-color: transparent;
+    overflow: hidden;
 }
 
 .grid{
@@ -396,27 +397,60 @@ body{
 
 .stat-container{
     grid-column: 2;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    transition: 0.5s all ease-in-out;
 }
 .announcements{
     margin: 10px;
     padding: 10px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 5px rgba(233, 228, 228, 0.5);
     transition: 0.5s all ease-in-out;
-    height: 50%;
+    border-left: 1px solid rgba(208, 178, 224, 0.836);
+    height: 100%;
     width: 100%;
     color: #ccc;
+    text-align: center;
+}
+
+.announcements.announcementBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.announcements:hover{
+    transform: scale(1.05);
+    transition: 0.5s all ease-in-out;
+    background-color: rgba(35, 31, 35, 0.5);
+    border-left: 1px solid rgba(208, 178, 224, 0.836);
+    box-shadow: 0px 0px 10px rgba(233, 228, 228, 0.5);
 }
 
 .trending{
     margin: 10px;
     padding: 10px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 5px rgba(233, 228, 228, 0.5);
     transition: 0.5s all ease-in-out;
-    height: 50%;
+    border-left: 1px solid rgba(208, 178, 224, 0.836);
+    text-align: center;
+    height: 100%;
     width: 100%;
     color: #ccc;
+}
+
+.trending.trendingBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.trending:hover{
+    transform: scale(1.05);
+    transition: 0.5s all ease-in-out;
+    background-color: rgba(35, 31, 35, 0.5);
+    border-left: 1px solid rgba(208, 178, 224, 0.836);
+    box-shadow: 0px 0px 10px rgba(233, 228, 228, 0.5);
 }
 
 .card{
@@ -490,3 +524,79 @@ body{
     font-weight: 500;
     transition: 0.5s all ease-in-out;
 }
+
+
+.announcementTitleMain{
+    margin: 10px;
+    padding: 10px;
+    transition: 0.5s all ease-in-out;
+    border-bottom: 2px solid rgba(208, 178, 224, 0.836);
+    color: #ccc;
+    text-align: center;
+    text-shadow: 0px 0px 10px rgba(233, 228, 228, 0.5);
+}
+
+.announcementTitle{
+    margin: 10px;
+    padding: 10px;
+    transition: 0.5s all ease-in-out;
+    color: #ccc;
+    text-align: center;
+    text-shadow: 0px 0px 5px rgba(233, 228, 228, 0.5);
+    text-decoration: underline wavy 1px rgba(208, 178, 224, 0.836);
+}
+
+.announcement{
+    margin: 10px;
+    padding: 10px;
+    transition: 0.5s all ease-in-out;
+    border-bottom: 0.11px solid rgba(208, 178, 224, 0.836);
+    color: #ccc;
+    text-align: center;
+}
+
+.announcementText{
+    margin: 10px;
+    padding: 10px;
+    transition: 0.5s all ease-in-out;
+    color: #ccc;
+    text-align: center;
+    text-shadow: 0px 0px 5px rgba(233, 228, 228, 0.5);
+}
+
+.trendingBox{
+    margin: 10px;
+    padding: 10px;
+    transition: 0.5s all ease-in-out;
+    color: #ccc;
+    text-align: center;
+}
+
+.trendingText{
+    margin: 10px;
+    padding: 10px;
+    transition: 0.5s all ease-in-out;
+    color: #ccc;
+    text-align: center;    
+}
+
+.trendingTitle{
+    margin: 10px;
+    padding: 10px;
+    transition: 0.5s all ease-in-out;
+    color: #ccc;
+    text-align: center;
+    text-shadow: 0px 0px 5px rgba(233, 228, 228, 0.5);
+    text-decoration: underline wavy 1px rgba(208, 178, 224, 0.836);
+}
+
+.trendingTitleMain{
+    margin: 10px;
+    padding: 10px;
+    transition: 0.5s all ease-in-out;
+    border-bottom: 2px solid rgba(208, 178, 224, 0.836);
+    color: #ccc;
+    text-align: center;
+    text-shadow: 0px 0px 10px rgba(233, 228, 228, 0.5);
+}
+
