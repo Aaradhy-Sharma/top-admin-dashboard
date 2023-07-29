@@ -18,7 +18,7 @@ body{
 
 .grid{
     display: grid;
-    grid-template-columns:20% 80%;
+    grid-template-columns:12.5% 87.5%;
 }
 
 .sidebar{
@@ -31,7 +31,6 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 1px solid rgba(0, 0, 0, 0.5);
 }
  
 
@@ -42,7 +41,6 @@ body{
 
 .content{
     height: 100vh;
-    border: 1px solid blue;
     border-radius: 20px 0px 0px 20px;
     display: grid;
     grid-template-rows: 10% 90%;
@@ -50,7 +48,6 @@ body{
 }
 
 .content .headbar{
-    border: 1px solid red;
     background-color: rgba(210, 215, 217, 0.126);
     border-radius: 20px 20px 20px 20px;
     display: flex;
@@ -68,7 +65,6 @@ body{
 }
 
 .content .main{
-    border: 1px solid green;
     display: grid; 
     grid-template-columns: 50% 50%;
     background-color: rgba(227, 227, 227, 0);
@@ -111,6 +107,9 @@ body{
 }
 
 .sidebarList1 li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 10px 0px;
     padding: 10px 0px;
     width: 100%;
@@ -125,6 +124,14 @@ body{
     transition: 0.5s all ease-in-out;
 }
 
+
+.sidebarListLink{
+    text-shadow: 0px 0px 5px rgba(215, 210, 210, 0.5);
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.836);
+    transition: 0.5s all ease-in-out;
+}
+
 .sidebarList2{
     list-style: none;
     margin: 120px 0px;
@@ -136,6 +143,9 @@ body{
 }
 
 .sidebarList2 li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 6px 0px;
     padding: 6px 0px;
     width: 100%;
@@ -171,6 +181,23 @@ body{
 .sidebarList1,.sidebarList2{
     color:rgba(208, 178, 224, 0.836);
     text-shadow: 0px 0px 5px rgba(215, 210, 210, 0.5);
+}
+
+.sidebarListLink:hover{
+    color:rgba(208, 178, 224, 0.836);
+    text-shadow: 0px 0px 5px rgba(215, 210, 210, 0.5);
+    transition: 0.5s all ease-in-out;
+}
+
+.sidebarListImg{
+    margin-right: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 30px;
+    height: 23px;
+    object-fit: cover;
+    border-radius: 50%;
+    transition: 0.5s all ease-in-out;
 }
 
 .search{
@@ -241,6 +268,7 @@ body{
     transition: 0.5s all ease-in-out;
     background-color: transparent;
     box-shadow: 0px 0px 5px rgba(233, 228, 228, 0.5);
+    margin-left: 10px;
 }
 
 .userIcon:hover{
@@ -253,13 +281,13 @@ body{
 
 .lang-selector{
     transition: 0.5s all ease-in-out;
-    margin-right: -400px;
+    /* margin-right: -620px; */
 }
 
 .lang-selector .lang{
-    margin: 10px 0px;
+    margin: 10px 100px;
     padding: 10px 0px;
-    width: 100%;
+    width: 19%;
     text-align: center;
     border-radius: 10px;
     cursor: pointer;
@@ -278,3 +306,48 @@ body{
     color: rgba(255, 255, 255, 0.836);
     text-shadow: 0px 0px 5px rgba(215, 210, 210, 0.5);
 }
+
+
+.sidebarListImg.settings:hover{
+    animation: settingsrotate 1s infinite linear;
+}
+
+.sidebarListImg.support:hover{
+    animation: supportIconFlips 1s infinite linear;
+}
+
+.sidebarListImg.privacy:hover{
+    animation: privacyIconScale 1s infinite linear;
+}
+
+
+@keyframes settingsrotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+        transition: 0.5s all ease-in-out;
+    }
+}
+
+@keyframes supportIconFlips {
+    0% {
+        transform: rotateY(0deg);
+    }
+    100% {
+        transform: rotateY(360deg);
+        transition: 0.5s all ease-in-out;
+    }
+}
+
+@keyframes privacyIconScale {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.1);
+        transition: 0.5s all ease-in-out;
+    }
+}
+    
